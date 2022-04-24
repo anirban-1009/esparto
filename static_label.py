@@ -3,7 +3,7 @@ from PIL import Image, ImageOps
 import numpy as np
 import cv2
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+#face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Load the model
 model = load_model('keras_model.h5')
@@ -20,10 +20,6 @@ frameHeight = 720
 
 while 1:
     # disable scientific notation for clarcv2.imshow('frame',img_text)
-    k = cv2.waitKey(30) & 0xff
-    if k == 27:
-        breakity
-
 
     np.set_printoptions(suppress=True)
 
@@ -38,8 +34,8 @@ while 1:
     # frame = cv2.flip(frame, 1)
 
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    #faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
     # crop to square for use with TM model
     margin = int(((frameWidth-frameHeight)/2))
@@ -64,23 +60,20 @@ while 1:
     fontScale = 1
     color = (0,255,25)
     lineType = cv2.LINE_4
+    org= (0,26)
     if predictions[0][0] >= 0.7:
         text ='without mask'
     
     elif predictions[0][1] >= 0.7:
         text = 'with mask'
 
-    for (x,y,w,h) in faces:
-        org = (x, y)
-        img_rect = cv2.rectangle(frame, (x,y), (x+w,y+h), (255,0,0),2)
-        img_text = cv2.putText(img_rect, text, org, fontFace, fontScale, color, lineType)
-        roi_gray = gray[y:y+h, x:x+w]
-        roi_color = frame[y:y+h, x:x+w]
+    img_text = cv2.putText(frame, text, org, fontFace, fontScale, color, lineType)
 
     cv2.imshow('frame',img_text)
     k = cv2.waitKey(30) & 0xff
     if k == 27:
         break
+
 
 cap.release()
 cv2.destroyWindows()
