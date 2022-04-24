@@ -20,9 +20,6 @@ frameHeight = 720
 
 while 1:
     # disable scientific notation for clarcv2.imshow('frame',img_text)
-    k = cv2.waitKey(30) & 0xff
-    if k == 27:
-        breakity
 
 
     np.set_printoptions(suppress=True)
