@@ -59,12 +59,12 @@ or
 >├── det.py   
 ├── face_det.py     
 ├── h5.py       
-├── haarcascade_eye.xml     
-├── haarcascade_frontalface_default.xml        
-├── keras_model.h5  
-├── labels.txt  
-├── Masks   
-│   ├── With Mask   
+├── [haarcascade_eye.xml](https://github.com/anirban-1009/esparto/blob/main/haarcascade_eye.xml)     
+├── [haarcascade_frontalface_default.xml](https://github.com/anirban-1009/esparto/blob/main/haarcascade_frontalface_default.xml)        
+├── [keras_model.h5](https://github.com/anirban-1009/esparto/blob/main/keras_model.h5)  
+├── [labels.txt](https://github.com/anirban-1009/esparto/blob/main/labels.txt)  
+├── [Masks  ](https://github.com/anirban-1009/esparto/tree/main/Masks "Masks")   
+│   ├── [With Mask](https://github.com/anirban-1009/esparto/tree/main/Masks/With%20Mask)   
 │   │   ├── download (1).jpg    
 │   │   ├── download (2).jpg    
 │   │   ├── download (3).jpg    
@@ -76,7 +76,7 @@ or
 │   │   ├── images.jpg      
 │   │   ├── Mask Roundup Image_0.png        
 │   │   └── woman-wearing-mask.original.jpg     
-│   └── Without Mask        
+│   └── [Without Mask](https://github.com/anirban-1009/esparto/tree/main/Masks/Without%20Mask)        
 │       ├── download (1).jpg    
 │       ├── download (2).jpg    
 │       ├── download (3).jpg    
@@ -88,7 +88,7 @@ or
 │       ├── images (3).jpg  
 │       └── images.jpg      
 ├── README.md   
-├── requirements.txt    
+├── [requirements.txt](https://github.com/anirban-1009/esparto/blob/main/requirements.txt)    
 ├── static_label.py     
 ├── test1.jpg       
 └── test2.jpg
