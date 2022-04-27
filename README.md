@@ -8,6 +8,11 @@ To clone this repository enter the command below.
 
 This repository contains both facial recognition using Haar cascade and also a follow up code for object detection using the model from teachable.
 
+The code for facial recognition can be found
+[here](https://github.com/anirban-1009/esparto/blob/main/face_det.py "The code")
+ to run the code enter first we have the directory enter the command.
+>cd esparto
+
 It is recommended to create and activate a virtual environment by following this [tutorial](https://www.geeksforgeeks.org/create-virtual-environment-using-venv-python/ "The tutorial")  without the virtual environment the following steps will work just fine.
 
 ## Requirements.txt
@@ -17,11 +22,6 @@ To get install all the depencendices enter the following command.
 >pip3 install -r "requirements.txt"
 
 ## Facial Recognition
-
-The code for facial recognition can be found
-[here](https://github.com/anirban-1009/esparto/blob/main/face_det.py "The code")
- to run the code enter first we have the directory enter the command.
->cd esparto
 
 Then to run the script enter the code bellow.
 >python face_det.py
