@@ -56,39 +56,39 @@ or
 
 ## Structure of the directory
 
->├── det.py
-├── face_det.py
-├── h5.py
-├── haarcascade_eye.xml
-├── haarcascade_frontalface_default.xml
-├── keras_model.h5
-├── labels.txt
-├── Masks
-│   ├── With Mask
-│   │   ├── download (1).jpg
-│   │   ├── download (2).jpg
-│   │   ├── download (3).jpg
-│   │   ├── download (4).jpg
-│   │   ├── download.jpg
-│   │   ├── file-20200408-44160-1qpyrm3.jpg
-│   │   ├── images (1).jpg
-│   │   ├── images (2).jpg
-│   │   ├── images.jpg
-│   │   ├── Mask Roundup Image_0.png
-│   │   └── woman-wearing-mask.original.jpg
-│   └── Without Mask
-│       ├── download (1).jpg
-│       ├── download (2).jpg
-│       ├── download (3).jpg
-│       ├── download (4).jpg
-│       ├── download (5).jpg
-│       ├── download.jpg
-│       ├── images (1).jpg
-│       ├── images (2).jpg
-│       ├── images (3).jpg
-│       └── images.jpg
-├── README.md
-├── requirements.txt
-├── static_label.py
-├── test1.jpg
+>├── det.py   
+├── face_det.py     
+├── h5.py       
+├── haarcascade_eye.xml     
+├── haarcascade_frontalface_default.xml        
+├── keras_model.h5  
+├── labels.txt  
+├── Masks   
+│   ├── With Mask   
+│   │   ├── download (1).jpg    
+│   │   ├── download (2).jpg    
+│   │   ├── download (3).jpg    
+│   │   ├── download (4).jpg    
+│   │   ├── download.jpg    
+│   │   ├── file-20200408-44160-1qpyrm3.jpg     
+│   │   ├── images (1).jpg      
+│   │   ├── images (2).jpg      
+│   │   ├── images.jpg      
+│   │   ├── Mask Roundup Image_0.png        
+│   │   └── woman-wearing-mask.original.jpg     
+│   └── Without Mask        
+│       ├── download (1).jpg    
+│       ├── download (2).jpg    
+│       ├── download (3).jpg    
+│       ├── download (4).jpg    
+│       ├── download (5).jpg    
+│       ├── download.jpg    
+│       ├── images (1).jpg  
+│       ├── images (2).jpg  
+│       ├── images (3).jpg  
+│       └── images.jpg      
+├── README.md   
+├── requirements.txt    
+├── static_label.py     
+├── test1.jpg       
 └── test2.jpg
